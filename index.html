@@ -138,9 +138,25 @@
       </div>
     </div>
     <div class="footer-bottom">
-      © 2025 by Fauzi. Created with a few IA's</a>
+      © 2025 by Fauzi. Created with a few IA's
     </div>
   </footer>
 
+  <script>
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", function() {
+      let header = document.querySelector(".site-header");
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScroll > lastScrollTop) {
+        header.classList.add("hidden");
+      } else {
+        header.classList.remove("hidden");
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+  </script>
 </body>
 </html>
