@@ -1,107 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    html { scroll-behavior: smooth; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fauzi de Ungaro | Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+
   <!-- Header -->
   <header class="site-header">
     <div class="container nav">
-      <div class="logo">Your Name</div>
+      <div class="logo">Fauzi de Ungaro</div>
       <nav>
-        <a href="https://your-portfolio-site.com" target="_blank">Portfolio</a>
+        <a href="#work">Portfolio</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero / Cover -->
-  <section class="hero" id="portfolio">
-    <video autoplay muted loop playsinline class="hero-video">
-      <source src="assets/demo-reel.mp4" type="video/mp4">
+  <!-- Cover Section -->
+  <section class="cover">
+    <video autoplay muted loop playsinline class="cover-video">
+      <source src="assets/demo-reel.mp4" type="video/mp4" />
     </video>
-    <div class="hero-text">
-      <h1>"Bring Your Vision to Life"</h1>
+    <div class="cover-text">
+      <h1>
+        Music videos.<br />
+        Live events.<br />
+        Real-Estate.<br />
+        <em>One-person crew.</em>
+      </h1>
     </div>
   </section>
 
-  <!-- About Me -->
-  <section id="about" class="about container">
-    <h2>About Me</h2>
-    <div class="about-content">
-      <img src="assets/_DSC0162.jpg" alt="Your Photo">
-      <p>Write a short bio about yourself.</p>
+  <!-- Partners & About -->
+  <section class="partners-about container">
+    <div class="partners">
+      <h2>Partners</h2>
+      <ul>
+        <li>Texas Hammer</li>
+        <li>Marcio Augusto</li>
+        <li>Leandro Baldissera</li>
+        <li>Casa Nanni</li>
+        <li>Sonora Studio</li>
+        <li>PerBrace BBQ</li>
+        <li>Cultura em Foco</li>
+      </ul>
+    </div>
+    <div class="about" id="about">
+      <h2>About Me</h2>
+      <img src="assets/_DSC0162.jpg" alt="Your Photo" class="profile-img" />
+      <p>
+        Hi, I’m Fauzi de Ungaro, a solo videomaker & photographer.<br><br>
+        I like to keep things simple. We talk about the idea and your project, we set the filming and delivery dates, and finally, I deliver the project ready to upload to your social media.<br><br>
+        It could be real estate, cooking, or music projects. It could be a 1-minute or 1-hour video. I can be just the colorist for your project or the producer. The project will be ready.
+      </p>
     </div>
   </section>
 
-  <!-- Partners -->
-  <section class="partners container">
-    <h2>Partners</h2>
-    <ul>
-      <li>Client 1</li>
-      <li>Client 2</li>
-      <li>Client 3</li>
-    </ul>
+  <!-- Services Orange Split -->
+  <section class="services-split">
+    <div class="left">
+      <h3>Services</h3>
+      <ul>
+        <li>Photography & Videography</li>
+        <li>Live Events & Performances</li>
+        <li>Narrative and Creative Projects</li>
+      </ul>
+    </div>
+    <div class="right">
+      <p>
+        I offer end-to-end video production as a dedicated one-person team.
+        From concept development and location scouting to filming, editing, and color grading, I oversee every stage of the process.
+        The result is a high-quality, ready-to-share video designed to engage audiences and perform on social media.
+      </p>
+    </div>
   </section>
 
-  <!-- Services -->
-  <section class="services container">
-    <h2>Services</h2>
-    <p>Describe your services: video editing, animation, motion graphics, VFX, etc.</p>
-  </section>
-
-  <!-- Work / YouTube Videos -->
-  <section class="work container">
-    <h2>Selected Works</h2>
+  <!-- Work -->
+  <section class="work" id="work">
+    <h2 class="work-heading container">Selected Works</h2>
     <div class="video-grid">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" frameborder="0" allowfullscreen></iframe>
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact container">
+  <!-- Contact Section -->
+  <section class="contact container" id="contact">
     <h2>Contact</h2>
-    <ul>
-      <li><a href="https://wa.me/123456789" target="_blank">WhatsApp</a></li>
-      <li><a href="mailto:you@email.com">Email</a></li>
-      <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
-      <li><a href="https://instagram.com/yourprofile" target="_blank">Instagram</a></li>
+    <ul class="contact-list">
+      <li><i class="fab fa-instagram"></i> instagram.com/yourprofile</li>
+      <li><i class="fab fa-whatsapp"></i> +39 333 458 7534</li>
+      <li><i class="fab fa-linkedin"></i> linkedin.com/in/yourprofile</li>
+      <li><i class="fas fa-envelope"></i> fauzideungaro.abdala@gmail.com</li>
     </ul>
   </section>
 
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <div class="social-icons">
-        <!-- Instagram -->
-        <a href="https://instagram.com/yourprofile" target="_blank">
-          <!-- SVG code here -->
-        </a>
-        <!-- WhatsApp -->
-        <a href="https://wa.me/123456789" target="_blank">
-          <!-- SVG code here -->
-        </a>
-        <!-- LinkedIn -->
-        <a href="https://linkedin.com/in/yourprofile" target="_blank">
-          <!-- SVG code here -->
-        </a>
-        <!-- Email -->
-        <a href="mailto:you@email.com">
-          <!-- SVG code here -->
-        </a>
+  <footer class="footer-section">
+    <div class="footer-info">
+      <div class="footer-item">
+        <h4>Address</h4>
+        <p>Firenze, Italy</p>
       </div>
-      <p>© 2025 Your Name. All rights reserved.</p>
+      <div class="footer-item">
+        <h4>Whatsapp</h4>
+        <p>+39 333 458 7534</p>
+      </div>
+      <div class="footer-item">
+        <h4>Email</h4>
+        <p>fauzideungaro.abdala@gmail.com</p>
+      </div>
+      <div class="footer-item">
+        <h4>Connect</h4>
+        <div class="footer-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 por Fauzi. Criado com <a href="https://wix.com" target="_blank">Wix.com</a>
     </div>
   </footer>
+
 </body>
 </html>
