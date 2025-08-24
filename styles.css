@@ -238,13 +238,14 @@ body {
   color: #fff1dd;
   font-size: 0.95rem;
   padding: 1rem 0;
-  text-align: center; /* Center align for smaller screens */
 }
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Align items vertically */
+  flex-direction: column; /* Stack items vertically */
+  text-align: center; /* Ensure everything is centered */
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 1rem; /* Padding for spacing */
@@ -253,6 +254,7 @@ body {
 .footer-content p {
   margin: 0;
   font-size: 1rem;
+  margin-bottom: 1rem; /* Add some space below the text */
 }
 
 .footer-icons {
@@ -270,37 +272,19 @@ body {
   color: #fff1dd; /* White color on hover */
 }
 
-/* Responsive */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .cover-text h1 {
-    font-size: 2.2rem; /* Smaller text size on mobile */
-  }
-
-  .partners-about {
+  .footer-content {
     flex-direction: column;
-    gap: 2rem;
+    text-align: center;
   }
-  .video-grid {
-    grid-template-columns: 1fr;
+  .footer-icons {
+    margin-top: 1rem;
   }
   .contact-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Stack the contact items on smaller screens */
   }
-  .cover-text {
-    margin-left: 0;
-    padding: 1.5rem 1.2rem;
-  }
-  .profile-img {
-    margin: 0 auto 1rem auto;
-  }
-  .services-split {
-    flex-direction: column;
-  }
-  .footer-info {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 2rem;
-  }
-  .footer-item {
-    text-align: center;
+  .video-grid {
+    grid-template-columns: 1fr; /* Stack video items on smaller screens */
   }
 }
