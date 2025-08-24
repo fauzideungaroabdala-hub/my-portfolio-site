@@ -9,7 +9,7 @@ body {
 .container {
   width: 90%;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0 auto; /* This ensures the container is centered */
 }
 
 /* Header Scroll Effect */
@@ -20,12 +20,12 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  transition: transform 0.3s ease-in-out; /* Smooth transition for header disappearance */
+  transition: transform 0.3s ease-in-out;
 }
 
 /* Class to hide the header */
 .site-header.hidden {
-  transform: translateY(-100%); /* Moves the header out of view */
+  transform: translateY(-100%);
 }
 
 /* Header */
@@ -57,10 +57,10 @@ body {
 .cover {
   position: relative;
   width: 100%;
-  min-height: 100vh; /* Full-screen cover */
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   background: #000;
   overflow: hidden;
 }
@@ -75,13 +75,16 @@ body {
 .cover-text {
   position: relative;
   z-index: 1;
-  margin-left: 8%;
+  text-align: center; /* Centers the text */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
   padding: 2rem 3rem;
   color: #fff1dd;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.4;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* Drop shadow for text */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 }
 .cover-text h1 {
   font-family: 'Montserrat', Arial, sans-serif;
@@ -94,25 +97,31 @@ body {
 /* Partners & About Section */
 .partners-about {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Centers the entire section */
   gap: 3rem;
-  margin: 3rem 0;
+  margin: 3rem auto;
+  max-width: 1000px; /* Limits width of section */
 }
+
 .partners, .about {
   flex: 1;
   background: #222;
   padding: 2rem;
   border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  text-align: center; /* Center the text inside each */
 }
+
 .partners h2, .about h2 {
   font-family: 'Montserrat', Arial, sans-serif;
   color: #f2622e;
 }
+
 .partners ul {
   list-style: none;
   padding: 0;
 }
+
 .partners li {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
@@ -120,13 +129,14 @@ body {
   border-left: 3px solid #f2622e;
   color: #fff1dd;
 }
+
 .profile-img {
   width: 120px;
   height: 120px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #f2622e;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem auto; /* Centers the image */
   display: block;
 }
 
@@ -193,8 +203,8 @@ body {
 
 /* Contact Section */
 .contact {
-  background: none; /* Removed background color */
-  color: #f2622e; /* Orange text color */
+  background: none;
+  color: #f2622e;
   margin: 3rem auto;
   padding: 2rem;
   border-radius: 16px;
@@ -202,7 +212,7 @@ body {
 
 .contact h2 {
   font-family: 'Montserrat', Arial, sans-serif;
-  color: #f2622e; /* Orange heading color */
+  color: #f2622e;
   margin-bottom: 1.5rem;
 }
 
@@ -223,12 +233,12 @@ body {
   background: #222;
   padding: 1rem 1.2rem;
   border-radius: 10px;
-  color: #f2622e; /* Orange text color */
+  color: #f2622e;
   border: 1px solid #f2622e;
 }
 
 .contact-list i {
-  color: #f2622e; /* Orange icons */
+  color: #f2622e;
   font-size: 1.4rem;
 }
 
@@ -238,29 +248,29 @@ body {
   color: #fff1dd;
   font-size: 0.95rem;
   padding: 1rem 0;
-  position: fixed; /* Fix the footer at the bottom */
+  position: fixed;
   left: 0;
-  bottom: -100px; /* Initially hide the footer below the screen */
+  bottom: -100px;
   width: 100%;
-  transition: bottom 0.3s ease-in-out; /* Smooth transition to show the footer */
+  transition: bottom 0.3s ease-in-out;
   z-index: 1000;
 }
 
 .footer-content {
   display: flex;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Align items vertically */
-  flex-direction: column; /* Stack items vertically */
-  text-align: center; /* Ensure everything is centered */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 1rem; /* Padding for spacing */
+  padding: 0 1rem;
 }
 
 .footer-content p {
   margin: 0;
   font-size: 1rem;
-  margin-bottom: 1rem; /* Add some space below the text */
+  margin-bottom: 1rem;
 }
 
 .footer-icons {
@@ -269,13 +279,13 @@ body {
 }
 
 .footer-icons a {
-  color: #f2622e; /* Orange color for icons */
+  color: #f2622e;
   font-size: 1.4rem;
   transition: color 0.3s ease;
 }
 
 .footer-icons a:hover {
-  color: #fff1dd; /* White color on hover */
+  color: #fff1dd;
 }
 
 /* Responsive adjustments */
@@ -288,9 +298,9 @@ body {
     margin-top: 1rem;
   }
   .contact-list {
-    grid-template-columns: 1fr; /* Stack the contact items on smaller screens */
+    grid-template-columns: 1fr;
   }
   .video-grid {
-    grid-template-columns: 1fr; /* Stack video items on smaller screens */
+    grid-template-columns: 1fr;
   }
 }
