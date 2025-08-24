@@ -69,7 +69,7 @@ body {
   top: 0; left: 0;
   width: 100%; height: 100%;
   object-fit: cover;
-  opacity: 0.7;
+  opacity: 0.4;
   z-index: 0;
 }
 .cover-text {
@@ -193,13 +193,19 @@ body {
 
 /* Contact Section */
 .contact {
+  background: none; /* Removed background color */
+  color: #f2622e; /* Orange text color */
   margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 16px;
 }
+
 .contact h2 {
   font-family: 'Montserrat', Arial, sans-serif;
-  color: #f2622e;
+  color: #f2622e; /* Orange heading color */
   margin-bottom: 1.5rem;
 }
+
 .contact-list {
   list-style: none;
   padding: 0;
@@ -209,6 +215,7 @@ body {
   gap: 1.5rem;
   font-size: 1.1rem;
 }
+
 .contact-list li {
   display: flex;
   align-items: center;
@@ -216,54 +223,51 @@ body {
   background: #222;
   padding: 1rem 1.2rem;
   border-radius: 10px;
-  color: #fff1dd;
+  color: #f2622e; /* Orange text color */
   border: 1px solid #f2622e;
 }
+
 .contact-list i {
-  color: #f2622e;
+  color: #f2622e; /* Orange icons */
   font-size: 1.4rem;
 }
 
 /* Footer */
 .footer-section {
-  background: #f6f6f6;
-  color: #000;
-  font-size: 0.95rem;
-}
-.footer-info {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 2rem 8%;
-  gap: 2rem;
-  border-top: 1px solid #ccc;
-}
-.footer-item h4 {
-  margin-bottom: 0.5rem;
-  color: #222;
-}
-.footer-icons {
-  display: flex;
-  gap: 1rem;
-}
-.footer-icons a {
-  color: #222;
-  font-size: 1.2rem;
-}
-.footer-icons a:hover {
-  color: #f2622e;
-}
-.footer-bottom {
-  text-align: center;
-  padding: 1rem 0;
   background: #222;
   color: #fff1dd;
+  font-size: 0.95rem;
+  padding: 1rem 0;
+  text-align: center; /* Center align for smaller screens */
 }
-.footer-bottom a {
-  color: #f2622e;
-  text-decoration: none;
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Padding for spacing */
 }
-.footer-bottom a:hover {
-  text-decoration: underline;
+
+.footer-content p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-icons a {
+  color: #f2622e; /* Orange color for icons */
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: #fff1dd; /* White color on hover */
 }
 
 /* Responsive */
