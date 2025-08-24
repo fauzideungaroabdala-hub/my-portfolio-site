@@ -6,28 +6,18 @@
   <title>Fauzi de Ungaro | Portfolio</title>
 
   <!-- Fonts & Icons -->
-  <!-- Google Fonts for Montserrat and Roboto for typography -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
-  
-  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  
-  <!-- Link to external stylesheet for custom styling -->
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
   <!-- Header Section -->
   <header class="site-header">
-    <!-- Container to hold logo and navigation -->
     <div class="container nav">
-      <!-- Logo with name -->
       <div class="logo">Fauzi de Ungaro</div>
-      <!-- Navigation menu -->
       <nav>
-        <!-- Portfolio link opens in a new tab -->
         <a href="http://www.behance.net/gallery/228140575/PORTFOLIO-Fauzi-de-Ungaro" target="_blank">Portfolio</a>
-        <!-- Internal navigation links with smooth scrolling (anchors) -->
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -36,11 +26,9 @@
 
   <!-- Cover Section (Hero Section) -->
   <section class="cover">
-    <!-- Background video for the hero section -->
     <video autoplay muted loop playsinline class="cover-video">
       <source src="assets/demo-reel.mp4" type="video/mp4" />
     </video>
-    <!-- Text content in front of the video -->
     <div class="cover-text">
       <h1>
         Music videos.<br />
@@ -53,10 +41,8 @@
 
   <!-- Partners & About Section -->
   <section class="partners-about container">
-    <!-- Partners Section -->
     <div class="partners">
       <h2>Partners</h2>
-      <!-- List of partners -->
       <ul>
         <li>Texas Hammer</li>
         <li>Marcio Augusto</li>
@@ -68,10 +54,8 @@
       </ul>
     </div>
     
-    <!-- About Me Section -->
     <div class="about" id="about">
       <h2>About Me</h2>
-      <!-- Profile Image -->
       <img src="assets/photo.jpg" alt="Your Photo" class="profile-img" />
       <p>
         Hi, I’m Fauzi de Ungaro, a solo videomaker & photographer.<br><br>
@@ -84,7 +68,6 @@
   <!-- Services Section (Split Layout) -->
   <section class="services-split">
     <div class="left">
-      <!-- Services List Heading -->
       <h3>Services</h3>
       <ul>
         <li>Photography & Videography</li>
@@ -93,7 +76,6 @@
       </ul>
     </div>
     <div class="right">
-      <!-- Description about the services -->
       <p>
         I offer end-to-end video production as a dedicated one-person team.
         From concept development and location scouting to filming, editing, and color grading, I oversee every stage of the process.
@@ -106,7 +88,6 @@
   <section class="work" id="work">
     <h2 class="work-heading container">Selected Works</h2>
     <div class="video-grid">
-      <!-- Embedded YouTube videos showcasing your work -->
       <div class="video-box">
         <iframe src="https://www.youtube.com/embed/9nFr0ofjaSo?si=mz2S7n8N4OQHtNmz" frameborder="0" allowfullscreen></iframe>
       </div>
@@ -126,10 +107,9 @@
   <section class="contact container" id="contact">
     <h2>Contact</h2>
     <ul class="contact-list">
-      <!-- Contact Links with Icons -->
       <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/fauzideungaro/" target="_blank">@fauzideungaro</a></li>
       <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/3334587534" target="_blank">+39 333 458 7534</a></li>
-      <li><i class="fab fa-linkedin"></i> <a href="www.linkedin.com/in/fauzi-de-ungaro-abdala" target="_blank">Linkedin.com/in/fauzi-de-ungaro-abdala</a></li>
+      <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/fauzi-de-ungaro-abdala" target="_blank">Linkedin.com/in/fauzi-de-ungaro-abdala</a></li>
       <li><i class="fas fa-envelope"></i> <a href="mailto:fauzideungaro.abdala@gmail.com">fauzideungaro.abdala@gmail.com</a></li>
     </ul>
   </section>
@@ -139,10 +119,9 @@
     <div class="footer-content">
       <p>© 2025 by Fauzi. Created with a few AI's</p>
       <div class="footer-icons">
-        <!-- Social Media Links in Footer -->
         <a href="https://www.instagram.com/fauzideungaro/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://wa.me/3334587534" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="www.linkedin.com/in/fauzi-de-ungaro-abdala" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/fauzi-de-ungaro-abdala" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="mailto:fauzideungaro.abdala@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
@@ -150,23 +129,22 @@
 
   <!-- Scroll Effect for Header and Footer -->
   <script>
-    let lastScrollTop = 0; // Track scroll position
+    let lastScrollTop = 0;
     let footer = document.querySelector(".footer-section");
     let header = document.querySelector(".site-header");
 
     window.addEventListener("scroll", function() {
       let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-      // Footer visibility: show footer when scrolling down
       if (currentScroll > lastScrollTop) {
-        footer.style.bottom = "0"; // Show footer
-        header.classList.add("hidden"); // Hide header
+        footer.style.bottom = "0";
+        header.classList.add("hidden");
       } else {
-        footer.style.bottom = "-100px"; // Hide footer
-        header.classList.remove("hidden"); // Show header again
+        footer.style.bottom = "-100px";
+        header.classList.remove("hidden");
       }
 
-      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll position
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     });
   </script>
 
