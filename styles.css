@@ -1,169 +1,178 @@
 /* Base Styles */
 body {
-  margin: 0; /* Remove default margin */
-  font-family: 'Roboto', Arial, sans-serif; /* Use Roboto font for text */
-  background: #222; /* Dark background */
-  color: #fff1dd; /* Light text color */
+  margin: 0; /* Remove default margin around the page */
+  font-family: 'Roboto', Arial, sans-serif; /* Set the base font to Roboto */
+  background: #222; /* Set background color to dark */
+  color: #fff1dd; /* Light text color for contrast */
 }
 
 /* Container Styles */
 .container {
-  width: 90%; /* Set container width to 90% of the screen */
-  max-width: 1100px; /* Maximum width of container */
-  margin: 0 auto; /* Center container horizontally */
+  width: 90%; /* 90% width of the screen for general container */
+  max-width: 1100px; /* Maximum width limit for the container */
+  margin: 0 auto; /* Center the container horizontally */
 }
 
 /* Header Scroll Effect */
 .site-header {
   background: #222; /* Dark background for header */
   color: #fff1dd; /* Light text color */
-  padding: 1rem 0; /* Padding on top and bottom of the header */
-  position: sticky; /* Keep header fixed at top */
-  top: 0; /* Set header to stick to the top */
-  z-index: 100; /* Ensure header is on top of other elements */
+  padding: 1rem 0; /* Padding for top and bottom of the header */
+  position: sticky; /* Stick header at the top when scrolling */
+  top: 0; /* Stick it at the very top */
+  z-index: 100; /* Ensure the header stays on top */
   transition: transform 0.3s ease-in-out; /* Smooth transition for hiding header */
 }
 
-/* When header is hidden (added dynamically via JavaScript) */
+/* When header is hidden */
 .site-header.hidden {
-  transform: translateY(-100%); /* Move header off the screen */
+  transform: translateY(-100%); /* Move header off-screen */
 }
 
-/* Navigation and Logo in Header */
+/* Header Navigation and Logo */
 .site-header .nav {
-  display: flex; /* Use flexbox for layout */
-  justify-content: space-between; /* Distribute space between logo and nav items */
-  align-items: center; /* Vertically center items */
+  display: flex; /* Flexbox layout for logo and nav items */
+  justify-content: space-between; /* Space between logo and nav items */
+  align-items: center; /* Vertically align nav items */
 }
 
 .logo {
-  font-family: 'Montserrat', Arial, sans-serif; /* Use Montserrat for logo */
-  font-size: 2rem; /* Large font size for the logo */
+  font-family: 'Montserrat', Arial, sans-serif; /* Logo font */
+  font-size: 2rem; /* Large size for the logo */
   font-weight: 700; /* Bold logo text */
   letter-spacing: 2px; /* Space between letters */
   color: #f2622e; /* Orange color for the logo */
 }
 
 .site-header nav a {
-  color: #fff1dd; /* Light color for navigation links */
+  color: #fff1dd; /* Light color for nav links */
   text-decoration: none; /* Remove underline from links */
   margin-left: 2rem; /* Space between links */
   font-weight: 500; /* Medium weight font for links */
-  font-size: 1rem; /* Normal font size for links */
-  transition: color 0.2s; /* Smooth color change on hover */
+  font-size: 1rem; /* Normal font size */
+  transition: color 0.2s; /* Smooth hover effect */
 }
 
 /* Hover effect for navigation links */
 .site-header nav a:hover {
-  color: #f2622e; /* Change text color to orange on hover */
+  color: #f2622e; /* Change link color on hover */
 }
 
 /* Cover Section */
 .cover {
-  position: relative; /* Position relative for positioning inner elements */
-  width: 100%; /* Full width */
-  min-height: 100vh; /* Full height of the screen */
-  display: flex; /* Flexbox layout */
-  align-items: center; /* Center content vertically */
+  position: relative; /* Position for absolute positioning of text and video */
+  width: 100%; /* Full width of the screen */
+  min-height: 100vh; /* Take full height of the screen */
+  display: flex; /* Flexbox layout for aligning content */
+  align-items: center; /* Center text vertically */
   justify-content: flex-start; /* Align content to the left */
-  background: #000; /* Black background */
-  overflow: hidden; /* Prevent content from overflowing */
+  background: #000; /* Black background for the cover section */
+  overflow: hidden; /* Prevent video from overflowing */
 }
 
 .cover-video {
   position: absolute; /* Position video relative to parent container */
   top: 0; left: 0; /* Align video at the top-left corner */
-  width: 100%; height: 100%; /* Cover full container width and height */
-  object-fit: cover; /* Ensure the video covers the container */
-  opacity: 0.7; /* Make the video slightly transparent */
-  z-index: 0; /* Place video behind other content */
+  width: 100%; height: 100%; /* Make video cover the full screen */
+  object-fit: cover; /* Make sure video fills container */
+  opacity: 0.7; /* Make video slightly transparent */
+  z-index: 0; /* Place the video behind text */
 }
 
 .cover-text {
   position: relative; /* Position text above the video */
-  z-index: 1; /* Ensure text is above the video */
-  margin-left: 8%; /* Add some left margin to text */
-  padding: 2rem 3rem; /* Add padding inside text container */
-  color: #fff1dd; /* Light text color */
-  font-size: 3rem; /* Large font size for cover text */
+  z-index: 1; /* Keep text above the video */
+  margin-left: 8%; /* Add margin to the left for some breathing space */
+  padding: 2rem 3rem; /* Padding around the text */
+  color: #fff1dd; /* Light color text */
+  font-size: 3rem; /* Large text size */
   font-weight: 700; /* Bold text */
-  line-height: 1.4; /* Set line height for readability */
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* Add shadow to text */
+  line-height: 1.4; /* Line height for readability */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* Text shadow for readability on video */
 }
 
 .cover-text h1 {
-  font-family: 'Montserrat', Arial, sans-serif; /* Use Montserrat font for the title */
+  font-family: 'Montserrat', Arial, sans-serif; /* Heading font */
 }
 
 .cover-text em {
-  font-style: italic; /* Italic style for emphasis */
-  color: #f2622e; /* Orange color for emphasis */
+  font-style: italic; /* Italicize the emphasized text */
+  color: #f2622e; /* Orange color for emphasized text */
 }
 
 /* Partners & About Section */
 .partners-about {
-  display: flex; /* Flexbox layout for side-by-side content */
-  justify-content: space-between; /* Space out the partners and about sections */
-  gap: 3rem; /* Add some space between the two sections */
-  margin: 3rem 0; /* Margin around the section */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align items at the top */
+  gap: 3rem;
+  margin: 3rem auto;
+  max-width: 1100px; /* Limit the width of the section */
+  padding: 0 1rem; /* Padding for smaller screens */
 }
 
 .partners, .about {
-  flex: 1; /* Allow both sections to take equal space */
-  background: #222; /* Dark background for both sections */
-  padding: 2rem; /* Padding inside sections */
-  border-radius: 16px; /* Rounded corners for the sections */
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); /* Add slight shadow for depth */
+  flex: 1; /* Each section takes equal width */
+  background: #222; /* Dark background */
+  padding: 2rem; /* Padding inside each section */
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); /* Slight shadow for depth */
 }
 
 .partners h2, .about h2 {
-  font-family: 'Montserrat', Arial, sans-serif; /* Font style for headings */
+  font-family: 'Montserrat', Arial, sans-serif; /* Font for headings */
   color: #f2622e; /* Orange color for headings */
 }
 
 .partners ul {
-  list-style: none; /* Remove default list style */
-  padding: 0; /* Remove default padding */
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
 }
 
 .partners li {
-  font-size: 1.1rem; /* Slightly larger font size for list items */
-  margin-bottom: 0.5rem; /* Space between list items */
-  padding-left: 10px; /* Left padding to make space for border */
-  border-left: 3px solid #f2622e; /* Orange border on the left of list items */
-  color: #fff1dd; /* Light text color for list items */
+  font-size: 1.1rem; /* Slightly larger font for list items */
+  margin-bottom: 0.5rem; /* Space between items */
+  padding-left: 10px; /* Padding to the left */
+  border-left: 3px solid #f2622e; /* Orange left border */
+  color: #fff1dd; /* Light text color */
 }
 
 .profile-img {
-  width: 120px; /* Set width for profile image */
-  height: 120px; /* Set height for profile image */
-  object-fit: cover; /* Ensure the image covers the area */
-  border-radius: 50%; /* Make the image circular */
-  border: 3px solid #f2622e; /* Orange border around the image */
+  width: 120px; /* Width for the profile image */
+  height: 120px; /* Height for the profile image */
+  object-fit: cover; /* Ensure image fits into the circle */
+  border-radius: 50%; /* Circular image */
+  border: 3px solid #f2622e; /* Orange border around image */
   margin-bottom: 1rem; /* Space below the image */
-  display: block; /* Ensure the image is a block element */
+  display: block; /* Block-level image */
 }
 
 /* Services Section */
 .services-split {
-  display: flex; /* Flexbox layout to place items side by side */
-  flex-wrap: wrap; /* Allow items to wrap onto next line */
-  background: #f2622e; /* Orange background */
-  color: #000; /* Black text */
-  padding: 2rem 0; /* Padding around the section */
+  display: flex; /* Flexbox layout for services */
+  justify-content: center; /* Center the content horizontally */
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  background: #f2622e; /* Orange background for the section */
+  color: #000; /* Dark text color */
+  padding: 1rem 3rem; /* Reduced padding to manage height */
+  max-width: 1100px; /* Limit width of the section */
+  margin: 0 auto; /* Center the section horizontally */
+  border-radius: 16px;
+  box-sizing: border-box;
 }
 
 .services-split .left, .services-split .right {
-  flex: 1; /* Make both sections take equal space */
-  padding: 1.5rem; /* Padding inside each section */
+  flex: 1; /* Each section takes equal width */
+  padding: 1rem; /* Padding inside the section */
 }
 
 .services-split .left h3 {
-  font-family: 'Montserrat', Arial, sans-serif; /* Font style for the heading */
-  margin-bottom: 1rem; /* Margin below the heading */
-  font-size: 1.2rem; /* Font size for the heading */
-  text-transform: uppercase; /* Uppercase text for the heading */
-  letter-spacing: 1px; /* Space between letters */
+  font-family: 'Montserrat', Arial, sans-serif; /* Font for the heading */
+  margin-bottom: 1rem; /* Space below the heading */
+  font-size: 1.2rem; /* Heading font size */
+  text-transform: uppercase; /* Uppercase heading */
+  letter-spacing: 2px; /* Space between letters */
 }
 
 .services-split .left ul {
@@ -172,33 +181,33 @@ body {
 }
 
 .services-split .left li {
-  font-weight: bold; /* Bold text for list items */
+  font-weight: bold; /* Bold text for items */
   margin-bottom: 1rem; /* Space between items */
 }
 
 .services-split .right p {
-  font-size: 0.95rem; /* Slightly smaller text */
+  font-size: 1.1rem; /* Slightly smaller text */
   line-height: 1.6; /* Line height for readability */
-  max-width: 500px; /* Limit the width of the text block */
+  max-width: 500px; /* Limit text block width */
 }
 
 /* Work Section */
 .work {
-  background: #111; /* Dark background for the work section */
-  padding: 3rem 0; /* Padding around the work section */
+  background: #111; /* Dark background */
+  padding: 3rem 0; /* Padding around the section */
 }
 
 .work-heading {
-  font-family: 'Montserrat', Arial, sans-serif; /* Font style for heading */
-  color: #f2622e; /* Orange color for heading */
+  font-family: 'Montserrat', Arial, sans-serif; /* Font for heading */
+  color: #f2622e; /* Orange text for heading */
   font-size: 2rem; /* Font size for the heading */
-  margin-bottom: 2rem; /* Margin below the heading */
+  margin-bottom: 2rem; /* Space below the heading */
 }
 
 /* Video Grid for Work Section */
 .video-grid {
   display: grid; /* Grid layout for videos */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid with 300px min width */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
   gap: 1.5rem; /* Space between videos */
   padding: 0 8%; /* Padding around the grid */
 }
@@ -214,4 +223,134 @@ body {
   width: 100%; /* Full width for iframe */
   aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
   border: none; /* Remove iframe border */
+}
+
+/* Contact Section */
+.contact {
+  background: none; /* Transparent background */
+  color: #f2622e; /* Orange text */
+  margin: 0rem auto;
+  padding: 0rem;
+  border-radius: 16px; /* Rounded corners */
+}
+
+.contact h2 {
+  font-family: 'Montserrat', Arial, sans-serif; /* Font for heading */
+  color: #f2622e; /* Orange heading */
+  margin-bottom: 2rem; /* Space below the heading */
+}
+
+.contact-list {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: grid; /* Grid layout for contact items */
+  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+  gap: 1.5rem; /* Space between items */
+  font-size: 1.1rem; /* Font size for contact items */
+}
+
+.contact-list li {
+  display: flex; /* Flex layout for each contact item */
+  align-items: center; /* Vertically align items */
+  gap: 0.7rem; /* Space between icon and text */
+  background: #222; /* Dark background for each contact item */
+  padding: 1rem 1.2rem;
+  border-radius: 10px; /* Rounded corners */
+  color: #f2622e; /* Orange text color */
+  border: 2px solid #f2622e; /* Orange border */
+}
+
+.contact-list i {
+  color: #f2622e; /* Orange icon color */
+  font-size: 1.4rem; /* Icon size */
+}
+
+/* Footer Section */
+.footer-section {
+  background: #222; /* Dark footer background */
+  color: #fff1dd; /* Light text color */
+  font-size: 0.95rem; /* Font size */
+  padding: 1rem 0;
+  position: fixed; /* Fix the footer at the bottom */
+  left: 0;
+  bottom: 0; /* Align it at the bottom of the screen */
+  width: 100%;
+  z-index: 1000;
+  transition: none;
+}
+
+/* Footer Content Styling */
+.footer-content {
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Space between text and icons */
+  align-items: center; /* Vertically center items */
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Padding around the content */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Footer Text (©) Styling */
+.footer-content p {
+  margin: 0;
+  font-size: 1rem;
+  margin-bottom: 0;
+  flex: 1; /* Allow text to take up remaining space */
+  text-align: left; /* Align text to the left */
+}
+
+/* Footer Icons (Social media links) Styling */
+.footer-icons {
+  display: flex; /* Flexbox layout for icons */
+  gap: 1.5rem; /* Space between the icons */
+  justify-content: flex-end; /* Align icons to the right */
+}
+
+.footer-icons a {
+  color: #f2622e; /* Orange icon color */
+  font-size: 1.4rem; /* Icon size */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.footer-icons a:hover {
+  color: #fff1dd; /* Change icon color to white on hover */
+}
+
+/* Adjusting body margin to prevent footer overlap */
+body {
+  margin-bottom: 100px; /* Adjust this to the height of the footer */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    text-align: center; /* Center text and icons */
+  }
+
+  .footer-icons {
+    margin-top: 1rem; /* Space between text and icons on smaller screens */
+  }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack footer items vertically on small screens */
+    text-align: center;
+  }
+
+  .footer-icons {
+    margin-top: 1rem;
+  }
+
+  .contact-list {
+    grid-template-columns: 1fr; /* Stack contact items on small screens */
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr; /* Stack video items on small screens */
+  }
 }
