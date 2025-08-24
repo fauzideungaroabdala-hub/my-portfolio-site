@@ -238,6 +238,12 @@ body {
   color: #fff1dd;
   font-size: 0.95rem;
   padding: 1rem 0;
+  position: fixed; /* Fix the footer at the bottom */
+  left: 0;
+  bottom: -100px; /* Initially hide the footer below the screen */
+  width: 100%;
+  transition: bottom 0.3s ease-in-out; /* Smooth transition to show the footer */
+  z-index: 1000;
 }
 
 .footer-content {
