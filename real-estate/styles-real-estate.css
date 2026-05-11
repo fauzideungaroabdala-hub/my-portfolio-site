@@ -1,67 +1,158 @@
-/* ================================
-   REAL ESTATE PAGE STYLE (NEW PALETTE)
-================================= */
+/* =========================
+   REAL ESTATE PAGE STYLE
+   (Luxury / Warm / Elegant)
+========================= */
 
-/* Page background (instead of pure black) */
+/* Base */
 body {
-  background: #121212;
-  color: #f5f1e6;
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #f6f1ea; /* soft beige instead of black */
+  color: #2b2b2b;
 }
 
-/* Make header slightly softer */
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* HEADER */
 .site-header {
-  background: #121212;
-  border-bottom: 1px solid rgba(242, 98, 46, 0.2);
+  background: #1f2a24; /* dark green instead of black */
+  color: #f6f1ea;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-/* Hero overlay feel */
+.logo {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d6b36a; /* gold accent */
+  letter-spacing: 1px;
+}
+
+.site-header nav a {
+  color: #f6f1ea;
+  text-decoration: none;
+  margin-left: 2rem;
+  transition: color 0.2s;
+}
+
+.site-header nav a:hover {
+  color: #d6b36a;
+}
+
+/* HERO */
+.cover {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #1f2a24;
+}
+
 .cover-video {
-  opacity: 0.6;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
 }
 
 .cover-text {
-  background: rgba(18, 18, 18, 0.7);
-  border: 1px solid rgba(242, 98, 46, 0.25);
-  backdrop-filter: blur(8px);
+  position: relative;
+  z-index: 1;
+  margin-left: 8%;
+  padding: 2rem 3rem;
+  background: rgba(31, 42, 36, 0.7);
+  border-left: 4px solid #d6b36a;
+  color: #f6f1ea;
 }
 
-/* Section cards feel lighter than background */
-.partners,
-.about {
-  background: #1a1a1a;
-  border: 1px solid rgba(242, 98, 46, 0.15);
+.cover-text h1 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2.5rem;
 }
 
-/* Services section softer contrast */
-.services-split {
-  background: #1f1f1f;
-  color: #f5f1e6;
+/* ABOUT SECTION */
+.partners-about .about {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
-/* Video section */
+/* HEADINGS */
+h2 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #1f2a24;
+}
+
+/* VIDEO SECTION */
+.work {
+  padding: 3rem 0;
+  background: #f6f1ea;
+}
+
+.work-heading {
+  color: #1f2a24;
+  font-size: 2rem;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 0 8%;
+}
+
 .video-box {
-  background: #1a1a1a;
-  border: 1px solid rgba(242, 98, 46, 0.3);
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  border: 1px solid #e5e0d8;
 }
 
-/* Contact section */
-.contact-list li {
-  background: #1a1a1a;
-  border: 1px solid rgba(242, 98, 46, 0.3);
+.video-box iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
 }
 
-/* Buttons still pop */
-.nav-button {
-  background: #f2622e;
-  color: #121212;
+/* Instagram images */
+.video-box img {
+  width: 100%;
+  display: block;
 }
 
-.nav-button:hover {
-  background: #f5f1e6;
-  color: #121212;
+/* CONTACT */
+.contact {
+  text-align: center;
+  padding: 3rem 1rem;
 }
 
-/* Footer slightly lighter than body */
-.site-footer {
-  background: #0f0f0f;
+.contact h2 {
+  color: #1f2a24;
+}
+
+/* FOOTER */
+.footer-section {
+  background: #1f2a24;
+  color: #f6f1ea;
+  padding: 1rem 0;
+}
+
+.footer-icons a {
+  color: #d6b36a;
+  margin-left: 1rem;
+}
+
+.footer-icons a:hover {
+  color: #ffffff;
 }
