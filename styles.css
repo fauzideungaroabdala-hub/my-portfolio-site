@@ -1,380 +1,69 @@
+/* ================================
+   GLOBAL STYLES - FAUZI PORTFOLIO
+================================= */
+
 /* Base Styles */
 body {
-  margin: 0; /* Remove default margin around the page */
-  font-family: 'Roboto', Arial, sans-serif; /* Set the base font to Roboto */
-  background: #222; /* Set background color to dark */
-  color: #fff1dd; /* Light text color for contrast */
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #222;
+  color: #fff1dd;
 }
 
-/* Container Styles */
+/* Container */
 .container {
-  width: 90%; /* 90% width of the screen for general container */
-  max-width: 1100px; /* Maximum width limit for the container */
-  margin: 0 auto; /* Center the container horizontally */
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-/* Header Scroll Effect */
+/* ================================
+   HEADER
+================================= */
+
 .site-header {
-  background: #222; /* Dark background for header */
-  color: #fff1dd; /* Light text color */
-  padding: 1rem 0; /* Padding for top and bottom of the header */
-  position: sticky; /* Stick header at the top when scrolling */
-  top: 0; /* Stick it at the very top */
-  z-index: 100; /* Ensure the header stays on top */
-  transition: transform 0.3s ease-in-out; /* Smooth transition for hiding header */
+  background: #222;
+  color: #fff1dd;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-/* When header is hidden */
-.site-header.hidden {
-  transform: translateY(-100%); /* Move header off-screen */
-}
-
-/* Header Navigation and Logo */
 .site-header .nav {
-  display: flex; /* Flexbox layout for logo and nav items */
-  justify-content: space-between; /* Space between logo and nav items */
-  align-items: center; /* Vertically align nav items */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-  font-family: 'Montserrat', Arial, sans-serif; /* Logo font */
-  font-size: 2rem; /* Large size for the logo */
-  font-weight: 700; /* Bold logo text */
-  letter-spacing: 2px; /* Space between letters */
-  color: #f2622e; /* Orange color for the logo */
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #f2622e;
 }
 
 .site-header nav a {
-  color: #fff1dd; /* Light color for nav links */
-  text-decoration: none; /* Remove underline from links */
-  margin-left: 2rem; /* Space between links */
-  font-weight: 500; /* Medium weight font for links */
-  font-size: 1rem; /* Normal font size */
-  transition: color 0.2s; /* Smooth hover effect */
-}
-
-/* Hover effect for navigation links */
-.site-header nav a:hover {
-  color: #f2622e; /* Change link color on hover */
-}
-
-/* Cover Section */
-.cover {
-  position: relative; /* Position for absolute positioning of text and video */
-  width: 100%; /* Full width of the screen */
-  min-height: 100vh; /* Take full height of the screen */
-  display: flex; /* Flexbox layout for aligning content */
-  align-items: center; /* Center text vertically */
-  justify-content: flex-start; /* Align content to the left */
-  background: #000; /* Black background for the cover section */
-  overflow: hidden; /* Prevent video from overflowing */
-}
-
-.cover-video {
-  position: absolute; /* Position video relative to parent container */
-  top: 0; left: 0; /* Align video at the top-left corner */
-  width: 100%; height: 100%; /* Make video cover the full screen */
-  object-fit: cover; /* Make sure video fills container */
-  opacity: 0.7; /* Make video slightly transparent */
-  z-index: 0; /* Place the video behind text */
-}
-
-.cover-text {
-  position: relative; /* Position text above the video */
-  z-index: 1; /* Keep text above the video */
-  margin-left: 8%; /* Add margin to the left for some breathing space */
-  padding: 2rem 3rem; /* Padding around the text */
-  color: #fff1dd; /* Light color text */
-  font-size: 3rem; /* Large text size */
-  font-weight: 700; /* Bold text */
-  line-height: 1.4; /* Line height for readability */
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* Text shadow for readability on video */
-}
-
-.cover-text h1 {
-  font-family: 'Montserrat', Arial, sans-serif; /* Heading font */
-}
-
-.cover-text em {
-  font-style: italic; /* Italicize the emphasized text */
-  color: #f2622e; /* Orange color for emphasized text */
-}
-
-/* Partners & About Section */
-.partners-about {
-  display: flex; /* Flexbox layout */
-  justify-content: center; /* Center horizontally */
-  align-items: flex-start; /* Align items at the top */
-  gap: 3rem;
-  margin: 3rem auto;
-  max-width: 1100px; /* Limit the width of the section */
-  padding: 0 1rem; /* Padding for smaller screens */
-}
-
-.partners, .about {
-  flex: 1; /* Each section takes equal width */
-  background: #222; /* Dark background */
-  padding: 2rem; /* Padding inside each section */
-  border-radius: 16px; /* Rounded corners */
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); /* Slight shadow for depth */
-}
-
-.partners h2, .about h2 {
-  font-family: 'Montserrat', Arial, sans-serif; /* Font for headings */
-  color: #f2622e; /* Orange color for headings */
-}
-
-.partners ul {
-  list-style: none; /* Remove default list styles */
-  padding: 0; /* Remove padding */
-}
-
-.partners li {
-  font-size: 1.1rem; /* Slightly larger font for list items */
-  margin-bottom: 0.5rem; /* Space between items */
-  padding-left: 10px; /* Padding to the left */
-  border-left: 3px solid #f2622e; /* Orange left border */
-  color: #fff1dd; /* Light text color */
-}
-
-.profile-img {
-  width: 120px; /* Width for the profile image */
-  height: 120px; /* Height for the profile image */
-  object-fit: cover; /* Ensure image fits into the circle */
-  border-radius: 50%; /* Circular image */
-  border: 3px solid #f2622e; /* Orange border around image */
-  margin-bottom: 1rem; /* Space below the image */
-  display: block; /* Block-level image */
-}
-
-/* Services Section */
-.services-split {
-  display: flex; /* Flexbox layout for services */
-  justify-content: center; /* Center the content horizontally */
-  align-items: flex-start;
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-  background: #f2622e; /* Orange background for the section */
-  color: #000; /* Dark text color */
-  padding: 1rem 3rem; /* Reduced padding to manage height */
-  max-width: 1100px; /* Limit width of the section */
-  margin: 0 auto; /* Center the section horizontally */
-  border-radius: 16px;
-  box-sizing: border-box;
-}
-
-.services-split .left, .services-split .right {
-  flex: 1; /* Each section takes equal width */
-  padding: 1rem; /* Padding inside the section */
-}
-
-.services-split .left h3 {
-  font-family: 'Montserrat', Arial, sans-serif; /* Font for the heading */
-  margin-bottom: 1rem; /* Space below the heading */
-  font-size: 1.2rem; /* Heading font size */
-  text-transform: uppercase; /* Uppercase heading */
-  letter-spacing: 2px; /* Space between letters */
-}
-
-.services-split .left ul {
-  list-style: none; /* Remove default list style */
-  padding: 0; /* Remove padding */
-}
-
-.services-split .left li {
-  font-weight: bold; /* Bold text for items */
-  margin-bottom: 1rem; /* Space between items */
-}
-
-.services-split .right p {
-  font-size: 1.1rem; /* Slightly smaller text */
-  line-height: 1.6; /* Line height for readability */
-  max-width: 500px; /* Limit text block width */
-}
-
-/* Work Section */
-.work {
-  background: #222; /* Dark background */
-  padding: 3rem 0; /* Padding around the section */
-}
-
-.work-heading {
-  font-family: 'Montserrat', Arial, sans-serif; /* Font for heading */
-  color: #f2622e; /* Orange text for heading */
-  font-size: 2rem; /* Font size for the heading */
-  margin-bottom: 2rem; /* Space below the heading */
-}
-
-/* Video Grid for Work Section */
-.video-grid {
-  display: grid; /* Grid layout for videos */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-  gap: 1.5rem; /* Space between videos */
-  padding: 0 8%; /* Padding around the grid */
-}
-
-.video-box {
-  border: 2px solid #f2622e; /* Orange border around each video */
-  border-radius: 6px; /* Rounded corners */
-  overflow: hidden; /* Hide overflow content */
-  background: #000; /* Black background for video box */
-}
-
-.video-box iframe {
-  width: 100%; /* Full width for iframe */
-  aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
-  border: none; /* Remove iframe border */
-}
-
-/* Contact Section */
-.contact {
-  background: none; /* Transparent background */
-  color: #f2622e; /* Orange text color */
-  margin: 3rem auto;
-  padding: 2rem;
-  border-radius: 16px;
-}
-
-.contact h2 {
-  font-family: 'Montserrat', Arial, sans-serif;
-  color: #f2622e; /* Orange heading */
-  margin-bottom: 1.5rem;
-  text-align: center; /* Center the heading */
-}
-
-/* Ensure text color in contact list is orange */
-.contact-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
-  gap: 1.5rem;
-  font-size: 1.1rem;
-}
-
-/* Contact list item styling */
-.contact-list li {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  background: #222;
-  padding: 1rem 1.2rem;
-  border-radius: 10px;
-  color: #f2622e; /* Orange text color */
-  border: 1px solid #f2622e; /* Orange border */
-}
-
-/* Link color inside the contact list */
-.contact-list a {
-  color: #f2622e; /* Orange link color */
-  text-decoration: none; /* Remove underline from links */
-}
-
-/* Hover effect for contact links */
-.contact-list a:hover {
-  color: #fff1dd; /* Change link color to white on hover */
-}
-
-.contact-list i {
-  color: #f2622e; /* Orange icons */
-  font-size: 1.4rem;
-}
-
-/* Footer Section */
-.footer-section {
-  background: #222; /* Dark footer background */
-  color: #fff1dd; /* Light text color */
-  font-size: 0.95rem; /* Font size */
-  padding: 1rem 0;
-  position: fixed; /* Fix the footer at the bottom */
-  left: 0;
-  bottom: 0; /* Align it at the bottom of the screen */
-  width: 100%;
-  z-index: 1000;
-  transition: none;
-}
-
-/* Footer Content Styling */
-.footer-content {
-  display: flex; /* Use flexbox layout */
-  justify-content: space-between; /* Space between text and icons */
-  align-items: center; /* Vertically center items */
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1rem; /* Padding around the content */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-}
-
-/* Footer Text (©) Styling */
-.footer-content p {
-  margin: 0;
+  color: #fff1dd;
+  text-decoration: none;
+  margin-left: 1.2rem;
+  font-weight: 500;
   font-size: 1rem;
-  margin-bottom: 0;
-  flex: 1; /* Allow text to take up remaining space */
-  text-align: left; /* Align text to the left */
+  transition: color 0.2s ease;
 }
 
-/* Footer Icons (Social media links) Styling */
-.footer-icons {
-  display: flex; /* Flexbox layout for icons */
-  gap: 1.5rem; /* Space between the icons */
-  justify-content: flex-end; /* Align icons to the right */
+.site-header nav a:hover {
+  color: #f2622e;
 }
 
-.footer-icons a {
-  color: #f2622e; /* Orange icon color */
-  font-size: 1.4rem; /* Icon size */
-  transition: color 0.3s ease; /* Smooth color transition on hover */
-}
-
-.footer-icons a:hover {
-  color: #fff1dd; /* Change icon color to white on hover */
-}
-
-/* Adjusting body margin to prevent footer overlap */
-body {
-  margin-bottom: 100px; /* Adjust this to the height of the footer */
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    text-align: center; /* Center text and icons */
-  }
-
-  .footer-icons {
-    margin-top: 1rem; /* Space between text and icons on smaller screens */
-  }
-}
-
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column; /* Stack footer items vertically on small screens */
-    text-align: center;
-  }
-
-  .footer-icons {
-    margin-top: 1rem;
-  }
-
-  .contact-list {
-    grid-template-columns: 1fr; /* Stack contact items on small screens */
-  }
-
-  .video-grid {
-    grid-template-columns: 1fr; /* Stack video items on small screens */
-  }
-}
-
+/* NAV BUTTON (Real Estate button) */
 .nav-button {
   background: #f2622e;
   color: #000;
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  margin-left: 1rem;
+  margin-left: 1.2rem;
   text-decoration: none;
   font-weight: 600;
   transition: 0.2s ease;
@@ -383,4 +72,237 @@ body {
 .nav-button:hover {
   background: #fff1dd;
   color: #222;
+}
+
+/* ================================
+   COVER / HERO
+================================= */
+
+.cover {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #000;
+  overflow: hidden;
+}
+
+.cover-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.cover-text {
+  position: relative;
+  z-index: 1;
+  margin-left: 8%;
+  padding: 2rem 3rem;
+  max-width: 700px;
+  color: #fff1dd;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.cover-text h1 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.cover-text em {
+  color: #f2622e;
+  font-style: italic;
+}
+
+/* ================================
+   PARTNERS + ABOUT
+================================= */
+
+.partners-about {
+  display: flex;
+  gap: 3rem;
+  margin: 4rem auto;
+}
+
+.partners, .about {
+  flex: 1;
+  background: #1f1f1f;
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+.partners h2, .about h2 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #f2622e;
+}
+
+.partners ul {
+  list-style: none;
+  padding: 0;
+}
+
+.partners li {
+  padding-left: 10px;
+  border-left: 3px solid #f2622e;
+  margin-bottom: 0.5rem;
+}
+
+/* Profile image */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f2622e;
+  margin-bottom: 1rem;
+}
+
+/* ================================
+   SERVICES SPLIT
+================================= */
+
+.services-split {
+  display: flex;
+  background: #f2622e;
+  color: #000;
+  border-radius: 16px;
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+.services-split .left,
+.services-split .right {
+  flex: 1;
+  padding: 1rem;
+}
+
+.services-split h3 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* ================================
+   WORK / VIDEOS
+================================= */
+
+.work {
+  padding: 4rem 0;
+}
+
+.work-heading {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #f2622e;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.video-box {
+  border: 2px solid #f2622e;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-box iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+/* ================================
+   CONTACT
+================================= */
+
+.contact {
+  margin: 4rem auto;
+}
+
+.contact h2 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #f2622e;
+  text-align: center;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  border: 1px solid #f2622e;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.contact-list a {
+  color: #f2622e;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  color: #fff1dd;
+}
+
+/* ================================
+   FOOTER
+================================= */
+
+.site-footer {
+  background: #111;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-icons a {
+  color: #f2622e;
+  font-size: 1.3rem;
+}
+
+/* ================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+  .partners-about {
+    flex-direction: column;
+  }
+
+  .services-split {
+    flex-direction: column;
+  }
+
+  .contact-list {
+    grid-template-columns: 1fr;
+  }
+
+  .cover-text h1 {
+    font-size: 2rem;
+  }
 }
