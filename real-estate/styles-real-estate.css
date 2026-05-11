@@ -45,7 +45,7 @@ body.real-estate {
 .video-box img {
   width: 100%;
   display: block;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 9 / 16;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
