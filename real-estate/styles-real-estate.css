@@ -1,0 +1,81 @@
+/* ================================
+   REAL ESTATE PAGE - CUSTOM STYLE
+================================= */
+
+/* Hero becomes more cinematic */
+.cover {
+  min-height: 100vh;
+}
+
+.cover-text {
+  max-width: 650px;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(242, 98, 46, 0.4);
+}
+
+/* Stronger title styling */
+.cover-text h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+/* Section spacing feels more premium */
+.partners-about,
+.services-split,
+.work,
+.contact {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+/* Partners list looks more “agency” */
+.partners li {
+  border-left: 3px solid #f2622e;
+  padding-left: 12px;
+  opacity: 0.95;
+}
+
+/* About section more editorial */
+.about p {
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* Services section becomes more bold */
+.services-split {
+  background: linear-gradient(135deg, #f2622e, #d94f1d);
+  color: #111;
+  border-radius: 20px;
+}
+
+.services-split .left h3 {
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+}
+
+/* Video grid gets tighter cinematic spacing */
+.video-grid {
+  gap: 2.5rem;
+}
+
+/* Video hover effect (important for real estate feel) */
+.video-box iframe {
+  transition: transform 0.3s ease;
+}
+
+.video-box:hover iframe {
+  transform: scale(1.03);
+}
+
+/* Contact becomes more minimal */
+.contact-list li {
+  background: transparent;
+  border: 1px solid rgba(242, 98, 46, 0.6);
+}
+
+/* Footer slightly cleaner */
+.footer-section {
+  background: #111;
+}
