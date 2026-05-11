@@ -3,150 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Real Estate Videography | Fauzi de Ungaro</title>
+  <title>Real Estate Videography</title>
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
 
-  <!-- Global styles -->
   <link rel="stylesheet" href="../styles.css"/>
-
-  <!-- Real estate styles -->
   <link rel="stylesheet" href="styles-real-estate.css"/>
 </head>
 
-<script>
-  const sections = document.querySelectorAll("section");
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-    });
-  }, {
-    threshold: 0.15
-  });
-
-  sections.forEach(section => observer.observe(section));
-</script>
-
 <body class="real-estate">
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container nav">
-      <div class="logo">Fauzi de Ungaro</div>
+<header class="site-header">
+  <div class="container nav">
+    <div class="logo">Fauzi de Ungaro</div>
 
-      <nav>
-        <a href="../index.html">Home</a>
-        <a href="../index.html#work">Work</a>
-        <a href="../index.html#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- HERO -->
-  <section class="cover">
-    <video autoplay muted loop playsinline class="cover-video">
-      <source src="../assets/demo-reel.mp4" type="video/mp4">
-    </video>
+<!-- HERO -->
+<section class="cover">
+  <video autoplay muted loop playsinline class="cover-video">
+    <source src="../assets/demo-reel.mp4">
+  </video>
 
-    <div class="cover-text">
-      <h1>
-        Real Estate<br>
-        Videography<br>
-        That sells spaces.
-      </h1>
-    </div>
-  </section>
+  <div class="cover-text">
+    <h1>
+      Real Estate<br>
+      Videography<br>
+      That sells spaces.
+    </h1>
+  </div>
+</section>
 
-  <!-- INTRO -->
-  <section class="partners-about container">
-    <div class="about">
-      <h2>Real Estate Videography</h2>
+<!-- CTA -->
+<div class="cta-container">
+  <a href="../index.html#contact" class="cta-button">Book a shoot</a>
+</div>
 
-      <p>
-        I create cinematic real estate videos that highlight space, light, and architecture.
-        My goal is to help properties stand out and attract buyers through strong visual storytelling.
-      </p>
+<!-- INTRO -->
+<section class="partners-about container">
+  <div class="about">
+    <h2>Real Estate Videography</h2>
 
-      <br>
-
-      <p>
-        From luxury villas to apartments, I handle filming, editing, and delivery optimized for social media and listings.
-      </p>
-    </div>
-  </section>
-
-  <!-- YOUTUBE -->
-  <section class="work">
-    <h2 class="work-heading container">YouTube Projects</h2>
-
-    <div class="video-grid">
-
-      <div class="video-box">
-        <iframe src="https://www.youtube.com/embed/9nFr0ofjaSo" allowfullscreen></iframe>
-      </div>
-
-      <div class="video-box">
-        <iframe src="https://www.youtube.com/embed/e7zS_4_ei9k" allowfullscreen></iframe>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- INSTAGRAM -->
-  <section class="work">
-    <h2 class="work-heading container">Instagram Reels</h2>
-
-    <div class="video-grid">
-
-      <div class="video-box">
-        <a href="https://www.instagram.com/reel/REPLACE_1/" target="_blank">
-          <img src="../assets/ig1.jpg" alt="Reel 1">
-        </a>
-      </div>
-
-      <div class="video-box">
-        <a href="https://www.instagram.com/reel/REPLACE_2/" target="_blank">
-          <img src="../assets/ig2.jpg" alt="Reel 2">
-        </a>
-      </div>
-
-      <div class="video-box">
-        <a href="https://www.instagram.com/reel/REPLACE_3/" target="_blank">
-          <img src="../assets/ig3.jpg" alt="Reel 3">
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="contact container">
-    <h2>Let’s Work Together</h2>
-
-    <p style="text-align:center; max-width:700px; margin:0 auto;">
-      If you're a real estate agent or property owner, I can help you create cinematic videos that make your listings stand out.
+    <p>
+      I create cinematic real estate videos that highlight space, light, and architecture.
+      My goal is to help properties stand out and attract buyers through strong visual storytelling.
+      <br><br>
+      From luxury villas to apartments, I handle filming, editing, and delivery optimized for social media and listings.
     </p>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer class="footer-section">
-    <div class="footer-content">
-      <p>© 2025 by Fauzi de Ungaro</p>
+<!-- WORK -->
+<section class="work">
+  <h2 class="work-heading container">YouTube Projects</h2>
 
-      <div class="footer-icons">
-        <a href="https://instagram.com" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="mailto:test@email.com">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </div>
+  <div class="video-grid">
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/9nFr0ofjaSo" allowfullscreen></iframe>
     </div>
-  </footer>
+
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/e7zS_4_ei9k" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="contact container">
+  <h2>Let’s Work Together</h2>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add("visible");
+    });
+  }, { threshold: 0.15 });
+
+  sections.forEach(s => observer.observe(s));
+});
+</script>
 
 </body>
 </html>

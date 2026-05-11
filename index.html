@@ -5,166 +5,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fauzi de Ungaro | Portfolio</title>
 
-  <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 
-<script>
-  const sections = document.querySelectorAll("section");
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-    });
-  }, {
-    threshold: 0.15
-  });
-
-  sections.forEach(section => observer.observe(section));
-</script>
-
 <body>
 
-  <!-- Header Section -->
-  <header class="site-header">
-    <div class="container nav">
-      <div class="logo">Fauzi de Ungaro</div>
-      <nav>
-        <a href="http://www.behance.net/gallery/228140575/PORTFOLIO-Fauzi-de-Ungaro" target="_blank">Portfolio</a>
-        <a href="real-estate/real-estate.html" class="nav-button">Real Estate</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+<header class="site-header">
+  <div class="container nav">
+    <div class="logo">Fauzi de Ungaro</div>
 
-  <!-- Cover Section (Hero Section) -->
-  <section class="cover">
-    <video autoplay muted loop playsinline class="cover-video">
-      <source src="assets/demo-reel.mp4" type="video/mp4" />
-    </video>
-    <div class="cover-text">
-      <h1>
-        Music videos.<br />
-        Live events.<br />
-        Real-Estate.<br />
-        <em>One-person crew.</em>
-      </h1>
-    </div>
-  </section>
+    <nav>
+      <a href="real-estate/real-estate.html" class="nav-button">Real Estate</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- Partners & About Section -->
-  <section class="partners-about container">
-    <div class="partners">
-      <h2>Partners</h2>
-      <ul>
-        <li>Texas Hammer</li>
-        <li>Marcio Augusto</li>
-        <li>Leandro Baldissera</li>
-        <li>Casa Nanni</li>
-        <li>Sonora Studio</li>
-        <li>PerBrace BBQ</li>
-        <li>Cultura em Foco</li>
-      </ul>
-    </div>
-    
-    <div class="about" id="about">
-      <h2>About Me</h2>
-      <img src="assets/photo.jpg" alt="Your Photo" class="profile-img" />
-      <p>
-        Hi, I’m Fauzi de Ungaro, a solo videomaker & photographer.<br><br>
-        I like to keep things simple. We talk about the idea and your project, we set the filming and delivery dates, and finally, I deliver the project ready to upload to your social media.<br><br>
-        It could be real estate, cooking, or music projects. It could be a 1-minute or 1-hour video. I can be just the colorist for your project or the producer. The project will be ready.
-      </p>
-    </div>
-  </section>
+<!-- HERO -->
+<section class="cover">
+  <video autoplay muted loop playsinline class="cover-video">
+    <source src="assets/demo-reel.mp4" type="video/mp4" />
+  </video>
 
-  <!-- Services Section (Split Layout) -->
-  <section class="services-split">
-    <div class="left">
-      <h3>Services</h3>
-      <ul>
-        <li>Photography & Videography</li>
-        <li>Live Events & Performances</li>
-        <li>Narrative and Creative Projects</li>
-      </ul>
-    </div>
-    <div class="right">
-      <p>
-        I offer end-to-end video production as a dedicated one-person team.
-        From concept development and location scouting to filming, editing, and color grading, I oversee every stage of the process.
-        The result is a high-quality, ready-to-share video designed to engage audiences and perform on social media.
-      </p>
-    </div>
-  </section>
+  <div class="cover-text">
+    <h1>
+      Music videos.<br>
+      Live events.<br>
+      Real Estate.<br>
+      <em>One-person crew.</em>
+    </h1>
+  </div>
+</section>
 
-  <!-- Work Section (Portfolio Section) -->
-  <section class="work" id="work">
-    <h2 class="work-heading container">Selected Works</h2>
-    <div class="video-grid">
-      <div class="video-box">
-        <iframe src="https://www.youtube.com/embed/9nFr0ofjaSo?si=mz2S7n8N4OQHtNmz" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="video-box">
-        <iframe src="https://www.youtube.com/embed/e7zS_4_ei9k?si=BE7fy_PQsMNXsVBf" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="video-box">
-        <iframe src="https://www.youtube.com/embed/FlIfiO_-zWE?si=8eWmRGqWmFBtAhnc" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="video-box">
-        <iframe src="https://www.youtube.com/embed/lBtDyp52UqM?si=_Binvpg02eJmApHP" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
+<!-- CTA -->
+<div class="cta-container">
+  <a href="#contact" class="cta-button">Book a shoot</a>
+</div>
 
-  <!-- Contact Section -->
-  <section class="contact container" id="contact">
-    <h2>Contact</h2>
-    <ul class="contact-list">
-      <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/fauzideungaro/" target="_blank">@fauzideungaro</a></li>
-      <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/3334587534" target="_blank">+39 333 438 7334</a></li>
-      <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/fauzi-de-ungaro-abdala" target="_blank">Linkedin.com/in/fauzi-de-ungaro-abdala</a></li>
-      <li><i class="fas fa-envelope"></i> <a href="mailto:fauzideungaro.abdala@gmail.com">fauzideungaro.abdala@gmail.com</a></li>
+<!-- PARTNERS + ABOUT (RESTORED FULLY) -->
+<section class="partners-about container">
+
+  <div class="partners">
+    <h2>Partners</h2>
+    <ul>
+      <li>Texas Hammer</li>
+      <li>Marcio Augusto</li>
+      <li>Leandro Baldissera</li>
+      <li>Casa Nanni</li>
+      <li>Sonora Studio</li>
+      <li>PerBrace BBQ</li>
+      <li>Cultura em Foco</li>
     </ul>
-  </section>
+  </div>
 
-  <!-- Footer Section -->
-  <footer class="footer-section">
-    <div class="footer-content">
-      <p>© 2025 by Fauzi. Created with a few AI's</p>
-      <div class="footer-icons">
-        <a href="https://www.instagram.com/fauzideungaro/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me/3334387334" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.linkedin.com/in/fauzi-de-ungaro-abdala" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:fauzideungaro.abdala@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-      </div>
+  <div class="about" id="about">
+    <h2>About Me</h2>
+    <img src="assets/photo.jpg" class="profile-img" />
+
+    <p>
+      Hi, I’m Fauzi de Ungaro, a solo videomaker & photographer.<br><br>
+
+      I like to keep things simple. We talk about the idea and your project, we set the filming and delivery dates, and finally, I deliver the project ready to upload to your social media.<br><br>
+
+      It could be real estate, cooking, or music projects. It could be a 1-minute or 1-hour video. I can be just the colorist for your project or the producer. The project will be ready.
+    </p>
+  </div>
+
+</section>
+
+<!-- WORK -->
+<section class="work">
+  <h2 class="work-heading container">Selected Works</h2>
+
+  <div class="video-grid">
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/9nFr0ofjaSo" allowfullscreen></iframe>
     </div>
-  </footer>
 
-  <!-- Scroll Effect for Header and Footer -->
-  <script>
-    let lastScrollTop = 0;
-    let footer = document.querySelector(".footer-section");
-    let header = document.querySelector(".site-header");
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/e7zS_4_ei9k" allowfullscreen></iframe>
+    </div>
 
-    window.addEventListener("scroll", function() {
-      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/FlIfiO_-zWE" allowfullscreen></iframe>
+    </div>
 
-      if (currentScroll > lastScrollTop) {
-        footer.style.bottom = "0";
-        header.classList.add("hidden");
-      } else {
-        footer.style.bottom = "-100px";
-        header.classList.remove("hidden");
-      }
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/lBtDyp52UqM" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
 
-      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+<!-- CONTACT -->
+<section class="contact container" id="contact">
+  <h2>Contact</h2>
+
+  <ul class="contact-list">
+    <li><a href="mailto:fauzideungaro.abdala@gmail.com">Email</a></li>
+    <li><a href="https://instagram.com">Instagram</a></li>
+  </ul>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add("visible");
     });
-  </script>
+  }, { threshold: 0.15 });
+
+  sections.forEach(s => observer.observe(s));
+});
+</script>
 
 </body>
 </html>
