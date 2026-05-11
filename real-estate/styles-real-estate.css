@@ -1,81 +1,67 @@
 /* ================================
-   REAL ESTATE PAGE - CUSTOM STYLE
+   REAL ESTATE PAGE STYLE (NEW PALETTE)
 ================================= */
 
-/* Hero becomes more cinematic */
-.cover {
-  min-height: 100vh;
+/* Page background (instead of pure black) */
+body {
+  background: #121212;
+  color: #f5f1e6;
+}
+
+/* Make header slightly softer */
+.site-header {
+  background: #121212;
+  border-bottom: 1px solid rgba(242, 98, 46, 0.2);
+}
+
+/* Hero overlay feel */
+.cover-video {
+  opacity: 0.6;
 }
 
 .cover-text {
-  max-width: 650px;
+  background: rgba(18, 18, 18, 0.7);
+  border: 1px solid rgba(242, 98, 46, 0.25);
   backdrop-filter: blur(8px);
-  background: rgba(0, 0, 0, 0.55);
-  border: 1px solid rgba(242, 98, 46, 0.4);
 }
 
-/* Stronger title styling */
-.cover-text h1 {
-  font-size: 3rem;
-  line-height: 1.2;
-  letter-spacing: 1px;
+/* Section cards feel lighter than background */
+.partners,
+.about {
+  background: #1a1a1a;
+  border: 1px solid rgba(242, 98, 46, 0.15);
 }
 
-/* Section spacing feels more premium */
-.partners-about,
-.services-split,
-.work,
-.contact {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
-/* Partners list looks more “agency” */
-.partners li {
-  border-left: 3px solid #f2622e;
-  padding-left: 12px;
-  opacity: 0.95;
-}
-
-/* About section more editorial */
-.about p {
-  line-height: 1.7;
-  font-size: 1.05rem;
-}
-
-/* Services section becomes more bold */
+/* Services section softer contrast */
 .services-split {
-  background: linear-gradient(135deg, #f2622e, #d94f1d);
-  color: #111;
-  border-radius: 20px;
+  background: #1f1f1f;
+  color: #f5f1e6;
 }
 
-.services-split .left h3 {
-  font-size: 1.4rem;
-  letter-spacing: 3px;
+/* Video section */
+.video-box {
+  background: #1a1a1a;
+  border: 1px solid rgba(242, 98, 46, 0.3);
 }
 
-/* Video grid gets tighter cinematic spacing */
-.video-grid {
-  gap: 2.5rem;
-}
-
-/* Video hover effect (important for real estate feel) */
-.video-box iframe {
-  transition: transform 0.3s ease;
-}
-
-.video-box:hover iframe {
-  transform: scale(1.03);
-}
-
-/* Contact becomes more minimal */
+/* Contact section */
 .contact-list li {
-  background: transparent;
-  border: 1px solid rgba(242, 98, 46, 0.6);
+  background: #1a1a1a;
+  border: 1px solid rgba(242, 98, 46, 0.3);
 }
 
-/* Footer slightly cleaner */
-.footer-section {
-  background: #111;
+/* Buttons still pop */
+.nav-button {
+  background: #f2622e;
+  color: #121212;
+}
+
+.nav-button:hover {
+  background: #f5f1e6;
+  color: #121212;
+}
+
+/* Footer slightly lighter than body */
+.site-footer {
+  background: #0f0f0f;
 }
