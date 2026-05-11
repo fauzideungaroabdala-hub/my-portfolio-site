@@ -1,26 +1,34 @@
 /* =========================
    REAL ESTATE PAGE STYLE
-   (Luxury / Warm / Elegant)
+   Scoped version (NO conflicts)
 ========================= */
 
-/* Base */
-body {
+/* BASE */
+.real-estate body {
   margin: 0;
   font-family: 'Roboto', Arial, sans-serif;
-  background: #f6f1ea; /* soft beige instead of black */
+  background: #f6f1ea;
   color: #2b2b2b;
 }
 
-/* Container */
-.container {
+/* If body selector doesn't apply (important fix) */
+body.real-estate {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #f6f1ea;
+  color: #2b2b2b;
+}
+
+/* CONTAINER */
+.real-estate .container {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
 }
 
 /* HEADER */
-.site-header {
-  background: #1f2a24; /* dark green instead of black */
+.real-estate .site-header {
+  background: #1f2a24;
   color: #f6f1ea;
   padding: 1rem 0;
   position: sticky;
@@ -28,27 +36,26 @@ body {
   z-index: 100;
 }
 
-.logo {
+.real-estate .logo {
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  color: #d6b36a; /* gold accent */
-  letter-spacing: 1px;
+  color: #d6b36a;
 }
 
-.site-header nav a {
+.real-estate .site-header nav a {
   color: #f6f1ea;
   text-decoration: none;
   margin-left: 2rem;
-  transition: color 0.2s;
+  transition: 0.2s;
 }
 
-.site-header nav a:hover {
+.real-estate .site-header nav a:hover {
   color: #d6b36a;
 }
 
 /* HERO */
-.cover {
+.real-estate .cover {
   position: relative;
   min-height: 80vh;
   display: flex;
@@ -57,7 +64,7 @@ body {
   background: #1f2a24;
 }
 
-.cover-video {
+.real-estate .cover-video {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -65,23 +72,23 @@ body {
   opacity: 0.5;
 }
 
-.cover-text {
+.real-estate .cover-text {
   position: relative;
   z-index: 1;
   margin-left: 8%;
   padding: 2rem 3rem;
-  background: rgba(31, 42, 36, 0.7);
+  background: rgba(31, 42, 36, 0.75);
   border-left: 4px solid #d6b36a;
   color: #f6f1ea;
 }
 
-.cover-text h1 {
+.real-estate .cover-text h1 {
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 2.5rem;
 }
 
-/* ABOUT SECTION */
-.partners-about .about {
+/* ABOUT */
+.real-estate .partners-about .about {
   background: #ffffff;
   padding: 2rem;
   border-radius: 12px;
@@ -89,30 +96,32 @@ body {
 }
 
 /* HEADINGS */
-h2 {
+.real-estate h2 {
   font-family: 'Montserrat', Arial, sans-serif;
   color: #1f2a24;
 }
 
-/* VIDEO SECTION */
-.work {
+/* WORK SECTION */
+.real-estate .work {
   padding: 3rem 0;
   background: #f6f1ea;
 }
 
-.work-heading {
+.real-estate .work-heading {
   color: #1f2a24;
   font-size: 2rem;
 }
 
-.video-grid {
+/* VIDEO GRID */
+.real-estate .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   padding: 0 8%;
 }
 
-.video-box {
+/* VIDEO BOX */
+.real-estate .video-box {
   background: #ffffff;
   border-radius: 12px;
   overflow: hidden;
@@ -120,39 +129,52 @@ h2 {
   border: 1px solid #e5e0d8;
 }
 
-.video-box iframe {
+.real-estate .video-box iframe {
   width: 100%;
   aspect-ratio: 16/9;
+  border: none;
 }
 
-/* Instagram images */
-.video-box img {
+.real-estate .video-box img {
   width: 100%;
   display: block;
 }
 
 /* CONTACT */
-.contact {
+.real-estate .contact {
   text-align: center;
   padding: 3rem 1rem;
 }
 
-.contact h2 {
+.real-estate .contact h2 {
   color: #1f2a24;
 }
 
 /* FOOTER */
-.footer-section {
+.real-estate .footer-section {
   background: #1f2a24;
   color: #f6f1ea;
   padding: 1rem 0;
 }
 
-.footer-icons a {
+.real-estate .footer-icons a {
   color: #d6b36a;
   margin-left: 1rem;
+  text-decoration: none;
 }
 
-.footer-icons a:hover {
+.real-estate .footer-icons a:hover {
   color: #ffffff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .real-estate .cover-text {
+    margin-left: 0;
+    padding: 1.5rem;
+  }
+
+  .real-estate .video-grid {
+    grid-template-columns: 1fr;
+  }
 }
